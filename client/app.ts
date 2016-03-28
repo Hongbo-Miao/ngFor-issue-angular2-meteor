@@ -23,7 +23,6 @@ export class App extends MeteorComponent {
     this.subscribe('tests', () => {
       this.autorun(() => {
         this.tests = Tests.find();
-        console.log('this.tests', this.tests.fetch()); //////////////
       });
     }, true);
   }
